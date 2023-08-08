@@ -1,0 +1,67 @@
+== On Off Push Button LED
+
+:Project: Simple 4 Button Panio
+:Author: Jason Sikes
+:AKA: TechRancher
+:Email: https://id.arduino.cc/sikesjay
+:Date: August 07, 2023
+:Revision: 1
+
+Title of this project is: {project}
+
+Author is {author}
+
+Also known as: {aka}
+
+Written on: {date}
+
+Version: {revision}
+
+.Description of the project
+This project is a simple on and off push button that turns the LED on or off with each
+push of the button. Simple circuit with the code doing the heavy lifting.
+
+.Items Needed
+* One Push button
+* One 330 Ohm Resistor
+* One Red LED
+* One Arduino R3 
+* One Breadboard
+* Five jumper wires
+
+.Circuit Design
+On the breadboard I installed the one push button left legs at column 55 on the second part
+of the breadboard, rows F, G, H, I, and J. The right legs in column 53. The 330 Ohm resistor
+left leg into column 30 on the upper part of the breadboard, rows A, B, C, D, and E. With
+the right leg into column 35. The red LED anode(positive leg, Long leg) into column 35, with
+the cathode(short leg) into column 36. I then ran the jumper wires. From the Arduino pin 2
+to column 55. Pin 4 to column 30. GND on the Arduino to GND rail on the breadboard. I ran 
+from the GND rail to column 53. From GND rail to column 36. The circuit is now wired up.
+
+.Thumbnail
+image:file:///home/jay/Arduino/practiceCode/OnOffSwitch/circuitLayout.png[
+"KiCad Schematic",
+link="file:///home/jay/Arduino/practiceCode/OnOffSwitch/circuitLayout.png"]
+
+
+.Code
+The code for this project is in the file called "SimplePanio.ino".
+
+.What To Expect
+This project will take the button reading to see where it is to where it was. We
+need to think about keeping track of the LED state also. We want the switching to happen
+when the button has been pushed but is being let up to make the switch. In order to do this
+we will have the if() look at the old button state and the new button state to see if the
+button is switching the LED on or off. In the if() code block we will change the state of the
+LED to have a nested if() to where we can ask if the LED is on (1) or off (0). Then if
+off have to switch turn on. If on have the switch turn off. I found that adding a delay to 
+the end of the loop cleans up the switch to allow it to respond with fast or slow presses.
+
+.Licensing Of Code
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+.Contact Me
+If you have any questions feel free to contact me at: {email}
