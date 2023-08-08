@@ -39,9 +39,9 @@ to column 55. Pin 4 to column 30. GND on the Arduino to GND rail on the breadboa
 from the GND rail to column 53. From GND rail to column 36. The circuit is now wired up.
 
 .Thumbnail
-image:file:///home/jay/Arduino/practiceCode/OnOffSwitch/circuitLayout.png[
+image:https://github.com/TechRancher/On_And_Off_LED_Switch/blob/main/circuitLayout.png[
 "KiCad Schematic",
-link="file:///home/jay/Arduino/practiceCode/OnOffSwitch/circuitLayout.png"]
+link="https://github.com/TechRancher/On_And_Off_LED_Switch/blob/main/circuitLayout.png"]
 
 
 .Code
